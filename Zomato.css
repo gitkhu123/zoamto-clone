@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+.navbar nav ul {
+    display: flex;
+
+}
+
+.navbar nav ul li {
+    list-style: none;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    margin-right: 38px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+.container {
+    /* background-color: black; */
+    /* border: 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container h1 {
+    margin-top: 70px;
+    font-size: 77px;
+    margin-bottom: 70px;
+}
+
+.container p {
+    font-size: 33px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("https://b.zmtcdn.com/mx-onboarding-hero87f77501659a5656cad54d98e72bf0d81627911821.webp") no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+}
+
+.section {
+    margin-top: 135px;
+    display: flex;
+    justify-content: center;
+}
+
+.box img {
+    width: 290px;
+    display: block;
+    margin: auto;
+    height: 182px;
+}
+
+.box {
+    width: 291px;
+    /* border: 1px solid grey; */
+    margin: 3px 8px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+.h1-secondary {
+    font-size: 1.7rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+}
+
+/* collection */
+.collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+.collection .section{
+    margin-top: 83px;
+    display: grid;
+}
+
+.collection .section .row .col-sm img{
+   
+        width: 245px;
+        display: block;
+        margin: auto;
+        height:306px;
+        position: relative;
+        max-width: 100%;
+       
+        overflow: hidden;
+        border-radius: 0.6rem;
+
+        filter: brightness(50%);
+    
+}
+
+.collection .section .row .col-sm .pos{
+    position: absolute;
+    bottom: 17px;
+    color: white;
+    left: 26px;
+    font-size: 21px;
+}
+.collection .section .row .col-sm .pos-1{
+    position: absolute;
+    bottom: -9px;
+    color: white;
+    left: 28px;
+    font-size: 17px;
+}
+
+/* locality */
+.locality{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+}
+
+.locality .row{
+    margin: 6px 0px;
+}
+.locality .row .col-sm{
+    box-shadow: 1px 1px grey;
+    /* box-shadow: -1px 1px grey; */
+
+    margin: 0px 4px;
+    width: 341px;
+    height: 70px;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.locality .row .col-sm .pos{
+    font-size: 24px;   
+}
+.locality .row .col-sm .pos-1{
+    position: absolute;
+    top: 37px;
+    font-size: 16px;
+}
+.locality .row .col-sm .pos-2{
+    position: absolute;
+    right: 18px;
+    top: 22px;
+}
+
+/* getapp */
+.getapp{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-gap : 1rem;
+    grid-template-areas: 
+    'side-1 side-1 side-2 side-2';
+    margin-top: 161px;
+}
+
+#side-1{
+    grid-area: side-1;
+    /* padding: 5px 10px; */
+}
+#side-2{
+    grid-area: side-2;
+}
+
+
+.getapp #side-1 img{
+    margin-top: 34px;
+    width: 250px;
+    height: 250px;
+}
+.getapp #side-2 img{
+    /* margin-top: 34px; */
+    width: 132px;
+    height: 39px;
+}
+
+/* option */
+.option .boxop{
+    width: 850px;
+    margin: auto;
+    border: 1px solid lightgray;
+    padding: 20px 14px;
+    margin-bottom: 19px;
+    border-radius: 10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.option h2{
+    width: 851px;
+    margin: auto;
+    margin-bottom: 24px;
+    font-weight: bold;
+    margin-top: 65px;
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_text{
+    font-weight: bold;
+}
+.search_container{
+    /* background-color: white; */
+}
